@@ -1525,15 +1525,15 @@ function updateLangButtons() {
     const isActive = btn.dataset.lang === activeLang;
     btn.classList.toggle("lang-switcher__btn--active", isActive);
     btn.setAttribute("aria-pressed", isActive ? "true" : "false");
-    const flag =
+    const text =
       btn.dataset.lang === "ja"
-        ? "🇯🇵"
+        ? "日"
         : btn.dataset.lang === "en"
-        ? "🇺🇸"
+        ? "EN"
         : btn.dataset.lang === "ko"
-        ? "🇰🇷"
+        ? "한"
         : btn.textContent;
-    btn.textContent = flag;
+    btn.textContent = text;
   });
 }
 
